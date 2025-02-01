@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let i = 3;
+
+            while (i) {
+                alert( i-- );
+            }
+
+            //second task
+            let z = 0;
+            while (++z < 5) alert( z );   
+            
+            let x = 0;
+            while (x++ < 5) alert( x ); //from 1 to 5
+
+            //third task
+            for (let i = 0; i < 5; ++i) alert( i );
+            for (let i = 0; i < 5; i++) alert( i );
+
+            //fourth task
+            for (let i = 2; i <= 10; i++) {
+                if (i % 2 == 0) {
+                    alert( i );
+                }
+            }
+
+            //fifth task
+            let e = 0;
+            while (e < 3) {
+                alert( `number ${e}!` );
+                e++;
+            }
+
+            //sixth task
+            let num;
+            do {
+                num = prompt("Enter a number greater than 100?", 0);
+            } while (num <= 100 && num);
+
+            //seventh task
+            let n = 10; 
+            nextPrime:
+            for (let i = 2; i <= n; i++) { // for each i...
+
+            for (let j = 2; j < i; j++) { // look for a divisor..
+                if (i % j == 0) continue nextPrime; // not a prime, go next i
+            }
+            alert( i ); // a prime
+            }
+        </script>
+    </body>
+</html>
