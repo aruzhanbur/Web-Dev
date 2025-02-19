@@ -1,0 +1,42 @@
+<div class="product-card">
+    <!-- Фото продукта -->
+    <div class="image-container">
+      <img [src]="product.imageUrl" class="product-image" alt="{{ product.name }}">
+    </div>
+  
+    <!-- Инфо -->
+    <div class="product-info">
+      <h5 class="product-title">{{ product.name }}</h5>
+      <p class="product-text">{{ product.description }}</p>
+      <p class="product-rating"><strong>Rating:</strong> ⭐{{ product.rating }}</p>
+    </div>
+  
+    <!-- Кнопки -->
+    <div class="buttons-container">
+      <a [href]="product.link" class="btn kaspi-btn" target="_blank">Kaspi.kz</a>
+  
+      <div class="action-buttons">
+        <!-- Like Button -->
+        <button class="like-btn" (click)="onLike()">
+            <i class="bi bi-heart-fill"></i>
+            <span>{{ product.likes }}</span>
+        </button>
+  
+        <!-- Кнопка Delete -->
+        <button class="delete-btn" (click)="onRemove()">
+          <i class="bi bi-trash3"></i>
+        </button>
+  
+        <!-- Кнопка WhatsApp -->
+        <button class="share-btn" (click)="shareWhatsApp()">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+  
+        <!-- Кнопка Telegram -->
+        <button class="share-btn" (click)="shareTelegram()">
+          <i class="bi bi-telegram"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
