@@ -1,0 +1,67 @@
+{
+  "hash": "38024aa1",
+  "configHash": "e22d8686",
+  "lockfileHash": "5daf4f5c",
+  "browserHash": "001a6689",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "b8e658f9",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "41ebe8fe",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "252dd0bc",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "a95a4ccd",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "1f48f0f5",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "04050ce2",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "cbd7b2f9",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-NVY2ZVTI": {
+      "file": "chunk-NVY2ZVTI.js"
+    },
+    "chunk-4LEP4D73": {
+      "file": "chunk-4LEP4D73.js"
+    },
+    "chunk-66KGIKBK": {
+      "file": "chunk-66KGIKBK.js"
+    },
+    "chunk-G3KP3JB5": {
+      "file": "chunk-G3KP3JB5.js"
+    },
+    "chunk-4QY3CLME": {
+      "file": "chunk-4QY3CLME.js"
+    }
+  }
+}
