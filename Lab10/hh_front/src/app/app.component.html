@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h1 class="mb-3">Companies</h1>
+
+  <ul class="list-group mb-4" *ngIf="companies.length > 0; else loading">
+    <li class="list-group-item list-group-item-action"
+        *ngFor="let company of companies"
+        (click)="showVacancies(company)">
+      {{ company.name }}
+    </li>
+  </ul>
+
+  <ng-template #loading>
+    <div class="alert alert-info">Loading companies...</div>
+  </ng-template>
+
+  <div *ngIf="selectedCompany">
+    <h2 class="mt-4">Vacancies in {{ selectedCompany.name }}</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let vacancy of vacancies">
+        <strong>{{ vacancy.name }}</strong> – {{ vacancy.salary }}$
+        <br />
+        <small class="text-muted">{{ vacancy.description }}</small>
+      </li>
+    </ul>
+  </div>
+</div>
